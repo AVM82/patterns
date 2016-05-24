@@ -1,6 +1,3 @@
-*.xml
-*.html
-*.class
-out
+/out
 /.idea
 
