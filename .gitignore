@@ -2,3 +2,16 @@
 /out/
 
 /.idea/
+/out/production/patterns/com/avm/patterns/strategy/Duck/behavior/fly/FlyNoWay.class
+/out/production/patterns/com/avm/patterns/strategy/Duck/behavior/fly/FlyOnRocket.class
+/out/production/patterns/com/avm/patterns/strategy/Duck/behavior/fly/FlyWithWings.class
+/out/production/patterns/com/avm/patterns/strategy/Duck/behavior/fly/FlyBehavior.class
+/out/production/patterns/com/avm/patterns/strategy/Duck/behavior/quack/QuackBehavior.class
+/out/production/patterns/com/avm/patterns/strategy/Duck/behavior/quack/MuteQuack.class
+/out/production/patterns/com/avm/patterns/strategy/Duck/behavior/quack/Quack.class
+/out/production/patterns/com/avm/patterns/strategy/Duck/MiniDuckSimulator$1.class
+/out/production/patterns/com/avm/patterns/strategy/Duck/MiniDuckSimulator.class
+/out/production/patterns/com/avm/patterns/strategy/Duck/ModelDuck.class
+/out/production/patterns/com/avm/patterns/strategy/Duck/Duck.class
+/out/production/patterns/com/avm/patterns/strategy/Duck/MallardDuck.class
+/out/production/patterns/com/avm/patterns/Main.class
