@@ -1,4 +1,4 @@
-package com.avm.patterns.strategy.Battle.behavior.Characters;
+package com.avm.patterns.strategy.Battle.Characters;
 
 import com.avm.patterns.strategy.Battle.behavior.shield.ShieldBehavior;
 import com.avm.patterns.strategy.Battle.behavior.weapon.WeaponBehavior;

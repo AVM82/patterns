@@ -1,9 +1,9 @@
 package com.avm.patterns.strategy.Battle;
 
-import com.avm.patterns.strategy.Battle.behavior.Characters.King;
-import com.avm.patterns.strategy.Battle.behavior.Characters.Knight;
-import com.avm.patterns.strategy.Battle.behavior.Characters.Orc;
-import com.avm.patterns.strategy.Battle.behavior.Characters.Troll;
+import com.avm.patterns.strategy.Battle.Characters.King;
+import com.avm.patterns.strategy.Battle.Characters.Knight;
+import com.avm.patterns.strategy.Battle.Characters.Orc;
+import com.avm.patterns.strategy.Battle.Characters.Troll;
 
 /**
  * Created by AVM2 on 05.06.2016.
