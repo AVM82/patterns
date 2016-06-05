@@ -26,7 +26,7 @@ public abstract class Duck {
 
     void swing() {
 
-        System.out.println("I am swiming!!!");
+        System.out.println("I am swimming!!!");
 
     }
 

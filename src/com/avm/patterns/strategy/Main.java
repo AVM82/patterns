@@ -1,4 +1,4 @@
-package com.avm.patterns;
+package com.avm.patterns.strategy;
 
 import com.avm.patterns.strategy.Duck.MiniDuckSimulator;
 
