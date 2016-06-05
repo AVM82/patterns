@@ -5,7 +5,7 @@ package com.avm.patterns.strategy.Battle.behavior.shield.Impls;
  */
 public class IronShield extends Shields {
 
-    IronShield(int defence) {
+    public IronShield(int defence) {
         super(defence);
     }
 

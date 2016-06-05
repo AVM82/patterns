@@ -7,7 +7,7 @@ import com.avm.patterns.strategy.Battle.behavior.weapon.WeaponBehavior;
  */
 public class Axe extends Weapons {
 
-    protected Axe(int damage) {
+    public Axe(int damage) {
         super(damage);
     }
 

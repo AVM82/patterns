@@ -1,5 +1,6 @@
-package com.avm.patterns.strategy.Battle;
+package com.avm.patterns.strategy.Battle.behavior.Characters;
 
+import com.avm.patterns.strategy.Battle.behavior.shield.Impls.NoShield;
 import com.avm.patterns.strategy.Battle.behavior.shield.ShieldBehavior;
 import com.avm.patterns.strategy.Battle.behavior.weapon.Impls.NoWeapon;
 import com.avm.patterns.strategy.Battle.behavior.weapon.WeaponBehavior;
@@ -10,20 +11,20 @@ import com.avm.patterns.strategy.Battle.behavior.weapon.WeaponBehavior;
 public abstract class Character {
 
     private WeaponBehavior weaponBehavior;
-    protected ShieldBehavior shieldBehavior;
-    protected int health;
-    protected int strong;
-
-    Character() {
-        super();
-    }
+    private ShieldBehavior shieldBehavior;
+    private int health;
+    private int strong;
 
     Character(int health, int strong) {
         super();
         this.health = health;
-        this.strong = strong;
-//        this.shieldBehavior = new NoShield();
-//        this.weaponBehavior = new NoWeapon();
+        if (strong > 100) {
+            throw new ArithmeticException("The MAX value of strong is 100");
+        } else {
+            this.strong = strong;
+        }
+        this.shieldBehavior = new NoShield(0);
+        this.weaponBehavior = new NoWeapon(10);
     }
 
     /**
@@ -31,6 +32,7 @@ public abstract class Character {
      *
      * @return return damage at enemy
      */
+
     public abstract int fight();
 
     public abstract int counterattack();

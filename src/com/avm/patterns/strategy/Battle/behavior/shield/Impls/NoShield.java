@@ -7,7 +7,7 @@ import com.avm.patterns.strategy.Battle.behavior.shield.Impls.Shields;
  */
 public class NoShield extends Shields {
 
-    NoShield(int defence) {
+    public NoShield(int defence) {
         super(defence);
     }
 

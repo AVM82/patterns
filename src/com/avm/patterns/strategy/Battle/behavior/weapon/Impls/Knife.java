@@ -4,7 +4,7 @@ package com.avm.patterns.strategy.Battle.behavior.weapon.Impls;
  * Created by AVM2 on 05.06.2016.
  */
 public class Knife extends Weapons {
-    protected Knife(int damage) {
+    public Knife(int damage) {
         super(damage);
     }
 

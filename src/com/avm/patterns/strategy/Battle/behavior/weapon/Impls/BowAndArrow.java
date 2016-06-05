@@ -4,7 +4,7 @@ package com.avm.patterns.strategy.Battle.behavior.weapon.Impls;
  * Created by AVM2 on 05.06.2016.
  */
 public class BowAndArrow extends Weapons {
-    protected BowAndArrow(int damage) {
+    public BowAndArrow(int damage) {
         super(damage);
     }
 

@@ -8,7 +8,7 @@ import com.avm.patterns.strategy.Battle.behavior.shield.Impls.Shields;
 public class WoodShield extends Shields {
 
 
-    WoodShield(int defence) {
+    public WoodShield(int defence) {
         super(defence);
     }
 

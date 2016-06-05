@@ -8,7 +8,7 @@ import com.avm.patterns.strategy.Battle.behavior.weapon.WeaponBehavior;
 public class Sword extends Weapons {
 
 
-    Sword(int damage) {
+    public Sword(int damage) {
         super(damage);
     }
 
