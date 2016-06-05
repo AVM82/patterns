@@ -1,6 +1,5 @@
 package com.avm.patterns.strategy.Battle.behavior.weapon.Impls;
 
-import com.avm.patterns.strategy.Battle.behavior.weapon.WeaponBehavior;
 
 /**
  * Created by AVM2 on 05.06.2016.

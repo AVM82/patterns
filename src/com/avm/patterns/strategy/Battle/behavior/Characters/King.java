@@ -1,5 +1,8 @@
 package com.avm.patterns.strategy.Battle.behavior.Characters;
 
+import com.avm.patterns.strategy.Battle.behavior.shield.Impls.IronShield;
+import com.avm.patterns.strategy.Battle.behavior.weapon.Impls.Sword;
+
 import java.lang.*;
 
 /**
@@ -9,11 +12,15 @@ public class King extends Character {
 
 
     public King(int health, int strong) {
+
         super(health, strong);
+        weaponBehavior = new Sword(15);
+        shieldBehavior = new IronShield(35);
     }
 
     @Override
     public int fight() {
+
         return 0;
     }
 

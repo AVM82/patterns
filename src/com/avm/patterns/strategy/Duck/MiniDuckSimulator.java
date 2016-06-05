@@ -5,16 +5,19 @@ package com.avm.patterns.strategy.Duck;
 
 
 import com.avm.patterns.strategy.Duck.behavior.fly.FlyOnRocket;
+import com.avm.patterns.strategy.Duck.behavior.quack.Quack;
 import com.avm.patterns.strategy.Duck.behavior.quack.QuackBehavior;
 
 public class MiniDuckSimulator {
     public void run() {
+
         ModelDuck modelDuck = new ModelDuck();
         MallardDuck mallardDuck = new MallardDuck();
 
         modelDuck.display();
         modelDuck.performQuack();
         modelDuck.quackBehavior.quack3();
+
         modelDuck.swing();
         modelDuck.flyBehavior.fly();
         System.out.println("//*******************************************//");

@@ -1,7 +1,5 @@
 package com.avm.patterns.strategy.Battle.behavior.shield.Impls;
 
-import com.avm.patterns.strategy.Battle.behavior.shield.Impls.Shields;
-
 /**
  * Created by AVM on 03.06.2016 17:53.
  */

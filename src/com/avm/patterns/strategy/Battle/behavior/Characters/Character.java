@@ -1,8 +1,6 @@
 package com.avm.patterns.strategy.Battle.behavior.Characters;
 
-import com.avm.patterns.strategy.Battle.behavior.shield.Impls.NoShield;
 import com.avm.patterns.strategy.Battle.behavior.shield.ShieldBehavior;
-import com.avm.patterns.strategy.Battle.behavior.weapon.Impls.NoWeapon;
 import com.avm.patterns.strategy.Battle.behavior.weapon.WeaponBehavior;
 
 /**
@@ -10,8 +8,8 @@ import com.avm.patterns.strategy.Battle.behavior.weapon.WeaponBehavior;
  */
 public abstract class Character {
 
-    private WeaponBehavior weaponBehavior;
-    private ShieldBehavior shieldBehavior;
+    protected WeaponBehavior weaponBehavior;
+    protected ShieldBehavior shieldBehavior;
     private int health;
     private int strong;
 
@@ -23,8 +21,7 @@ public abstract class Character {
         } else {
             this.strong = strong;
         }
-        this.shieldBehavior = new NoShield(0);
-        this.weaponBehavior = new NoWeapon(10);
+
     }
 
     /**

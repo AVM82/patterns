@@ -1,27 +1,24 @@
 package com.avm.patterns.strategy.Battle;
 
 import com.avm.patterns.strategy.Battle.behavior.Characters.King;
-import com.avm.patterns.strategy.Battle.behavior.shield.Impls.IronShield;
-import com.avm.patterns.strategy.Battle.behavior.shield.Impls.WoodShield;
-import com.avm.patterns.strategy.Battle.behavior.weapon.Impls.*;
+import com.avm.patterns.strategy.Battle.behavior.Characters.Knight;
+import com.avm.patterns.strategy.Battle.behavior.Characters.Orc;
+import com.avm.patterns.strategy.Battle.behavior.Characters.Troll;
 
 /**
  * Created by AVM2 on 05.06.2016.
  */
 public class Arena {
-    void run() {
+    public void run() {
 
-        Sword kingSword = new Sword(7);
-        Sword knightSword = new Sword(9);
-        Axe trollAxe = new Axe(15);
-        BowAndArrow bowAndArrow = new BowAndArrow(12);
-        Knife knife = new Knife(5);
-
-        WoodShield woodShield = new WoodShield(15);
-        IronShield ironShields = new IronShield(35);
 
         King king = new King(500, 10);
-        king.setWeapon(kingSword);
-        king.setShield(ironShields);
+        Knight knight = new Knight(600, 15);
+        Troll troll = new Troll(700, 20);
+        Orc orc = new Orc(800, 25);
+
+
+
+
     }
 }

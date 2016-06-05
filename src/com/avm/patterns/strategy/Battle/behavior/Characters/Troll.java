@@ -1,12 +1,17 @@
 package com.avm.patterns.strategy.Battle.behavior.Characters;
 
+import com.avm.patterns.strategy.Battle.behavior.shield.Impls.NoShield;
+import com.avm.patterns.strategy.Battle.behavior.weapon.Impls.BowAndArrow;
+
 /**
  * Created by AVM2 on 05.06.2016.
  */
 public class Troll extends Character {
 
-    Troll(int health, int strong) {
+    public Troll(int health, int strong) {
         super(health, strong);
+        weaponBehavior = new BowAndArrow(40);
+        shieldBehavior = new NoShield(0);
     }
 
     @Override
