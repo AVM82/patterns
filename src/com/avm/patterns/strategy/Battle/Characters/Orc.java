@@ -6,26 +6,15 @@ import com.avm.patterns.strategy.Battle.behavior.weapon.Impls.Axe;
 /**
  * Created by AVM2 on 05.06.2016.
  */
-public class Orc extends Character {
+public class Orc extends Fighter {
 
-    public Orc(int health, int strong) {
-        super(health, strong);
+    public Orc(int health, int strong, String name) {
+        super(health, strong, name);
         weaponBehavior = new Axe(45);
         shieldBehavior = new WoodShield(15);
     }
 
-    @Override
-    public int fight() {
-        return 0;
-    }
 
-    @Override
-    public int counterattack() {
-        return 0;
-    }
 
-    @Override
-    public void defense() {
 
-    }
 }

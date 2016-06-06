@@ -6,4 +6,8 @@ package com.avm.patterns.strategy.Battle.behavior.shield;
 public interface ShieldBehavior {
 
     int useShield(int damage);
+
+    int getDefence();
+
+    int getDefenceValue(int damage);
 }

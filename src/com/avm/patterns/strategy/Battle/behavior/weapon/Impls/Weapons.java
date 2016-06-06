@@ -17,4 +17,6 @@ public abstract class Weapons implements WeaponBehavior {
     public int getDamageValue(int strong) {
         return ((100 + strong) * damage) / 100;
     }
+
+
 }

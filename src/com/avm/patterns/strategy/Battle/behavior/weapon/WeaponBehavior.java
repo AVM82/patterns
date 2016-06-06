@@ -6,4 +6,6 @@ package com.avm.patterns.strategy.Battle.behavior.weapon;
 public interface WeaponBehavior {
 
     int useWeapon(int strong);
+
+    int getDamageValue(int strong);
 }

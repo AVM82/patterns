@@ -8,29 +8,18 @@ import java.lang.*;
 /**
  * Created by AVM2 on 05.06.2016.
  */
-public class King extends Character {
+public class King extends Fighter {
 
 
-    public King(int health, int strong) {
+    public King(int health, int strong, String name) {
 
-        super(health, strong);
-        weaponBehavior = new Sword(15);
-        shieldBehavior = new IronShield(35);
+        super(health, strong, name);
+        weaponBehavior = new Sword(25);
+        shieldBehavior = new IronShield(60);
     }
 
-    @Override
-    public int fight() {
 
-        return 0;
-    }
 
-    @Override
-    public int counterattack() {
-        return 0;
-    }
 
-    @Override
-    public void defense() {
 
-    }
 }

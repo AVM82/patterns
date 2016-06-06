@@ -6,16 +6,18 @@ import com.avm.patterns.strategy.Battle.behavior.weapon.WeaponBehavior;
 /**
  * Created by AVM on 03.06.2016 17:09.
  */
-public abstract class Character {
+public abstract class Fighter {
 
     protected WeaponBehavior weaponBehavior;
     protected ShieldBehavior shieldBehavior;
     private int health;
     private int strong;
+    private String name;
 
-    Character(int health, int strong) {
+    Fighter(int health, int strong, String name) {
         super();
         this.health = health;
+        this.name = name;
         if (strong > 100) {
             throw new ArithmeticException("The MAX value of strong is 100");
         } else {
@@ -24,17 +26,21 @@ public abstract class Character {
 
     }
 
+
     /**
-     * Method fight() and counterattack()
+     * Method attack() and counterattack()
      *
      * @return return damage at enemy
      */
 
-    public abstract int fight();
+    public int attack() {
+        return weaponBehavior.useWeapon(strong);
+    }
 
-    public abstract int counterattack();
 
-    public abstract void defense();
+    public int defense(int damage) {
+        return shieldBehavior.useShield(damage);
+    }
 
     public void damage(int damage) {
         this.health -= damage;
@@ -45,9 +51,28 @@ public abstract class Character {
         this.weaponBehavior = weapon;
     }
 
+    public WeaponBehavior getWeapon() {
+        return this.weaponBehavior;
+    }
+
     public void setShield(ShieldBehavior shield) {
         this.shieldBehavior = shield;
     }
 
 
+    public String getName() {
+        return name;
+    }
+
+    public int getHealth() {
+        return health;
+    }
+
+    public ShieldBehavior getShield() {
+        return shieldBehavior;
+    }
+
+    public void healthRecovery(int health) {
+        this.health = health;
+    }
 }

@@ -21,5 +21,9 @@ public abstract class Shields implements ShieldBehavior {
         return ((100 - defence) * damage) / 100;
     }
 
+    public int getDefence() {
+        return defence;
+    }
+
 
 }
