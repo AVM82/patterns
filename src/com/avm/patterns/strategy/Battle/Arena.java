@@ -2,7 +2,6 @@ package com.avm.patterns.strategy.Battle;
 
 import com.avm.patterns.strategy.Battle.Characters.*;
 import com.avm.patterns.strategy.Battle.behavior.shield.Impls.NoShield;
-import com.avm.patterns.strategy.Battle.behavior.weapon.Impls.Knife;
 import com.avm.patterns.strategy.Battle.behavior.weapon.Impls.NoWeapon;
 
 import java.util.LinkedList;
@@ -22,7 +21,7 @@ public class Arena {
     public void run() {
 
         addFighter(new King(300, 20, "King"));
-        addFighter(new Orc(400, 15, "Orc"));
+        addFighter(new Orc(350, 15, "Orc"));
         addFighter(new Knight(300, 15, "Knight"));
         addFighter(new Troll(400, 20, "Troll"));
         addFighter(new King(355, 11, "Artur"));
@@ -95,7 +94,7 @@ public class Arena {
 
     private void brokeWeapon(Fighter fighter) {
         Random random = new Random();
-        if (random.nextInt(1000) < 50) {
+        if (random.nextInt(2000) < 50) {
             System.out.println("[" + fighter.getName() + "]: My weapon is broken!!!");
             counter(5);
             fighter.setWeapon(new NoWeapon(3));
@@ -105,7 +104,7 @@ public class Arena {
 
     private void brokeShield(Fighter fighter) {
         Random random = new Random();
-        if (random.nextInt(1000) < 100) {
+        if (random.nextInt(2000) < 100) {
             System.out.println("[" + fighter.getName() + "]: My shield is broken!!!");
             counter(5);
             fighter.setShield(new NoShield(0));
